@@ -1,0 +1,182 @@
+[
+  {
+    "jurorId": "J68042",
+    "index": 0,
+    "firstName": "Ines",
+    "lastName": "Lucy",
+    "gender": "female",
+    "email": "lucycompton@suremax.com",
+    "address": "965 Pooles Lane"
+  },
+  {
+    "jurorId": "J55580",
+    "index": 1,
+    "firstName": "Brooke",
+    "lastName": "Mcleod",
+    "gender": "male",
+    "email": "mcleodcompton@suremax.com",
+    "address": "869 Cozine Avenue"
+  },
+  {
+    "jurorId": "J41149",
+    "index": 2,
+    "firstName": "Jody",
+    "lastName": "Townsend",
+    "gender": "male",
+    "email": "townsendcompton@suremax.com",
+    "address": "366 Tompkins Place"
+  },
+  {
+    "jurorId": "J88693",
+    "index": 3,
+    "firstName": "Webb",
+    "lastName": "Meyer",
+    "gender": "male",
+    "email": "meyercompton@suremax.com",
+    "address": "528 Ovington Court"
+  },
+  {
+    "jurorId": "J64288",
+    "index": 4,
+    "firstName": "Diana",
+    "lastName": "Annette",
+    "gender": "female",
+    "email": "annettecompton@suremax.com",
+    "address": "436 Kenmore Terrace"
+  },
+  {
+    "jurorId": "J73658",
+    "index": 5,
+    "firstName": "Vivian",
+    "lastName": "Hart",
+    "gender": "male",
+    "email": "hartcompton@suremax.com",
+    "address": "631 Moore Street"
+  },
+  {
+    "jurorId": "J62197",
+    "index": 6,
+    "firstName": "Matthews",
+    "lastName": "Boyle",
+    "gender": "male",
+    "email": "boylecompton@suremax.com",
+    "address": "123 Grand Street"
+  },
+  {
+    "jurorId": "J94384",
+    "index": 7,
+    "firstName": "Wise",
+    "lastName": "Vanessa",
+    "gender": "female",
+    "email": "vanessacompton@suremax.com",
+    "address": "801 Union Street"
+  },
+  {
+    "jurorId": "J71243",
+    "index": 8,
+    "firstName": "Christina",
+    "lastName": "Tia",
+    "gender": "female",
+    "email": "tiacompton@suremax.com",
+    "address": "969 Bond Street"
+  },
+  {
+    "jurorId": "J19026",
+    "index": 9,
+    "firstName": "Elinor",
+    "lastName": "Good",
+    "gender": "male",
+    "email": "goodcompton@suremax.com",
+    "address": "747 Gerry Street"
+  },
+  {
+    "jurorId": "J54403",
+    "index": 10,
+    "firstName": "Nieves",
+    "lastName": "Booth",
+    "gender": "male",
+    "email": "boothcompton@suremax.com",
+    "address": "384 Horace Court"
+  },
+  {
+    "jurorId": "J46347",
+    "index": 11,
+    "firstName": "Althea",
+    "lastName": "Clayton",
+    "gender": "male",
+    "email": "claytoncompton@suremax.com",
+    "address": "659 Knight Court"
+  },
+  {
+    "jurorId": "J26974",
+    "index": 12,
+    "firstName": "Vicki",
+    "lastName": "Sheena",
+    "gender": "female",
+    "email": "sheenacompton@suremax.com",
+    "address": "776 Williams Place"
+  },
+  {
+    "jurorId": "J19917",
+    "index": 13,
+    "firstName": "Roy",
+    "lastName": "Kristy",
+    "gender": "female",
+    "email": "kristycompton@suremax.com",
+    "address": "614 Landis Court"
+  },
+  {
+    "jurorId": "J33608",
+    "index": 14,
+    "firstName": "Wyatt",
+    "lastName": "Burke",
+    "gender": "male",
+    "email": "burkecompton@suremax.com",
+    "address": "396 Benson Avenue"
+  },
+  {
+    "jurorId": "J21605",
+    "index": 15,
+    "firstName": "Sasha",
+    "lastName": "Noelle",
+    "gender": "female",
+    "email": "noellecompton@suremax.com",
+    "address": "224 Billings Place"
+  },
+  {
+    "jurorId": "J45987",
+    "index": 16,
+    "firstName": "Obrien",
+    "lastName": "Sharron",
+    "gender": "female",
+    "email": "sharroncompton@suremax.com",
+    "address": "867 Brighton Court"
+  },
+  {
+    "jurorId": "J63017",
+    "index": 17,
+    "firstName": "Jill",
+    "lastName": "Blanche",
+    "gender": "female",
+    "email": "blanchecompton@suremax.com",
+    "address": "592 Ovington Avenue"
+  },
+  {
+    "jurorId": "J26332",
+    "index": 18,
+    "firstName": "Carmen",
+    "lastName": "Salinas",
+    "gender": "male",
+    "email": "salinascompton@suremax.com",
+    "address": "779 Montana Place"
+  },
+  {
+    "jurorId": "J95115",
+    "index": 19,
+    "firstName": "Reynolds",
+    "lastName": "Gaines",
+    "gender": "male",
+    "email": "gainescompton@suremax.com",
+    "address": "433 Brigham Street"
+  }
+]

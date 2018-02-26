@@ -1,0 +1,26 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" routerLink='/home'><span><img src="../../../assets/images/balance.png" height=20 width=20 alt="hammer image"></span>&nbsp;&nbsp;Jury Management System</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-left">
+        <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink='/home'>Home</a></li>
+        <li *ngIf="isLoggedIn" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink='/jurors-data' aria-label="To view and search jurors data">Jurors Data</a></li>
+        <li *ngIf="isLoggedIn" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink='/events'  aria-label="To view and search events data">Events</a></li>
+        <li *ngIf="isLoggedIn" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink='/summon-jurors'  aria-label="To randomly summon jurors">Summon Jurors</a></li>
+      </ul>  
+      <ul class="nav navbar-nav navbar-right">
+        <li *ngIf="!isLoggedIn" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink = '/sign-in'  aria-label="To register or sign in">Sign In / Register</a></li>
+        <li *ngIf="isLoggedIn" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a routerLink = '/profile'  aria-label="To view your profile">Profile</a></li>
+        <li *ngIf="isLoggedIn" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" (click)="signOut()"><a  aria-label="To sign out">Sign Out</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,49 @@
+ /* th, td{
+    text-align: center;
+}
+
+.jumbotron {
+    margin-top: 20px;
+}
+
+#search-input { 
+    background-image: url('../../../assets/images/search.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.filteredBy {
+    margin:30px 0 30px 0;
+    color: #449D44;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+#tableWrapper {
+    font-size: 14px;
+    overflow-x: auto;
+    min-width: 100%;
+    table-layout: fixed;
+} */
+
+.juror-table {
+    color: rgb(167, 191, 216);
+    text-align: center;
+    line-height: 40px;
+}
+
+.rule {
+    padding-top: 20px;
+    width: 85%;
+    border-bottom: 0.5px solid #4E5D6C;
+    margin: 0 auto;
+    position: relative;
+    left: -20px;
+}
+
+select #filterType {
+    height: 40px;
+}
+

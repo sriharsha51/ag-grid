@@ -1,0 +1,56 @@
+<div class="container-fluid">
+  <form [formGroup]="summonJurorsForm" (submit)="onSummonJurors(summonJurorsForm.controls['inputNumber'].value)" novalidate class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-sm-offset-1 col-sm-10">
+    <h2>Summon Jurors</h2>
+    <br>
+    <div class="input-items">
+      <span class="dropdown">
+        <button class="btn btn-success dropdown-toggle" type="button" id="select-event" data-toggle="dropdown">{{selectedEvent ? selectedEvent : 'Select Event Name'}}
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="select-event">
+          <li role="presentation" *ngFor="let event of events">
+            <a role="menuitem" tabindex="-1" (click)="onEventSelect(event.eventName)">{{event.eventName}}</a>
+          </li>
+        </ul>
+      </span>
+    </div>
+    <div class="input-items">
+      <div class="form-group" [ngClass]="{'has-error': summonJurorsForm.controls['inputNumber'].dirty && (!summonJurorsForm.controls['inputNumber'].valid || !selectedEvent)}">
+        <input type="number" formControlName="inputNumber" placeholder="Please enter number of Jurors to summon" name="jurors-number"
+          class="form-control">
+      </div>
+      <div class="center" *ngIf="!selectedEvent && summonJurorsForm.controls['inputNumber'].dirty"><!--Validation messages-->
+          <em>Please select the event name first.</em> <!--to request user to select event name first-->
+        </div>
+      <div class="center" *ngIf="summonJurorsForm.controls['inputNumber'].errors?.required && summonJurorsForm.controls['inputNumber'].dirty && selectedEvent">
+        <em>Please enter number of jurors.</em>
+      </div>
+      <div class="center" *ngIf="summonJurorsForm.controls['inputNumber'].errors?.min || summonJurorsForm.controls['inputNumber'].errors?.max && selectedEvent">
+        <em>Please enter numbers between 1 and 5.</em>
+      </div>
+    </div>
+    <br>
+    <button class="btn btn-primary" type="submit" [disabled]="!selectedEvent || !summonJurorsForm.valid">Summon Jurors</button>
+  </form>
+  <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-sm-offset-1 col-sm-10">
+    <table class="table table-responsive table-hover table-striped table-bordered table-responsive">
+      <thead>
+        <tr>
+          <th>Juror ID</th>
+          <th>Juror Name</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let juror of randomJurors">
+          <td>{{juror?.jurorId}}</td>
+          <td>{{juror?.firstName +' '+juror?.lastName}}</td>
+          <td>Summoned</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf='errorMessage' class='alert alert-danger'>
+      Error: {{ errorMessage }}
+  </div>
+</div>

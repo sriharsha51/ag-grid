@@ -1,0 +1,42 @@
+[
+  {
+    "empId": "JMS93625",
+    "index": 0,
+    "firstName": "Estella",
+    "lastName": "Stone",
+    "email": "test1@test.com",
+    "password": "test1"
+  },
+  {
+    "empId": "JMS64287",
+    "index": 1,
+    "firstName": "Avery",
+    "lastName": "Carr",
+    "email": "test2@test.com",
+    "password": "test2"
+  },
+  {
+    "empId": "JMS57731",
+    "index": 2,
+    "firstName": "Kasey",
+    "lastName": "Hardin",
+    "email": "test3@test.com",
+    "password": "test3"
+  },
+  {
+    "empId": "JMS20997",
+    "index": 3,
+    "firstName": "Sanders",
+    "lastName": "Fitzpatrick",
+    "email": "test4@test.com",
+    "password": "test4"
+  },
+  {
+    "empId": "JMS85001",
+    "index": 4,
+    "firstName": "Sylvia",
+    "lastName": "Chaney",
+    "email": "test5@test.com",
+    "password": "test5"
+  }
+]

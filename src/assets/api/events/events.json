@@ -1,0 +1,112 @@
+[
+    {
+      "eventId": "BELLEVUE45554",
+      "eventName": "JURY5492",
+      "index": 0,
+      "eventDate": "5/15/2018",
+      "eventDuration": "1hr",
+      "judgeName": "Pearl Mills",
+      "defendantName": "Long Curry",
+      "caseNumber": 8794,
+      "roomNumber": 2
+    },
+    {
+      "eventId": "BELLEVUE94357",
+      "eventName": "JURY4165",
+      "index": 1,
+      "eventDate": "8/7/2018",
+      "eventDuration": "2hr",
+      "judgeName": "Victoria Gaines",
+      "defendantName": "Valerie Dunlap",
+      "caseNumber": 1989,
+      "roomNumber": 6
+    },
+    {
+      "eventId": "BELLEVUE65434",
+      "eventName": "JURY2824",
+      "index": 2,
+      "eventDate": "8/5/2018",
+      "eventDuration": "1hr",
+      "judgeName": "Virgie English",
+      "defendantName": "Ramos Flores",
+      "caseNumber": 8291,
+      "roomNumber": 1
+    },
+    {
+      "eventId": "BELLEVUE30365",
+      "eventName": "JURY5188",
+      "index": 3,
+      "eventDate": "8/20/2018",
+      "eventDuration": "1hr",
+      "judgeName": "Nguyen Shepard",
+      "defendantName": "Sears Conley",
+      "caseNumber": 2828,
+      "roomNumber": 17
+    },
+    {
+      "eventId": "BELLEVUE20738",
+      "eventName": "JURY8154",
+      "index": 4,
+      "eventDate": "3/27/2018",
+      "eventDuration": "2hr",
+      "judgeName": "Mays Nunez",
+      "defendantName": "Alston Delaney",
+      "caseNumber": 8045,
+      "roomNumber": 13
+    },
+    {
+      "eventId": "BELLEVUE22556",
+      "eventName": "JURY4710",
+      "index": 5,
+      "eventDate": "12/22/2018",
+      "eventDuration": "2hr",
+      "judgeName": "Day Hudson",
+      "defendantName": "Kathy Dalton",
+      "caseNumber": 9063,
+      "roomNumber": 12
+    },
+    {
+      "eventId": "BELLEVUE14427",
+      "eventName": "JURY6608",
+      "index": 6,
+      "eventDate": "5/18/2018",
+      "eventDuration": "1hr",
+      "judgeName": "Cindy Valdez",
+      "defendantName": "Shelia Vaughan",
+      "caseNumber": 2251,
+      "roomNumber": 18
+    },
+    {
+      "eventId": "BELLEVUE47917",
+      "eventName": "JURY6728",
+      "index": 7,
+      "eventDate": "9/19/2018",
+      "eventDuration": "2hr",
+      "judgeName": "Vicky Wilkins",
+      "defendantName": "Wilder Bentley",
+      "caseNumber": 4883,
+      "roomNumber": 17
+    },
+    {
+      "eventId": "BELLEVUE35828",
+      "eventName": "JURY4775",
+      "index": 8,
+      "eventDate": "1/6/2018",
+      "eventDuration": "2hr",
+      "judgeName": "Margo Wood",
+      "defendantName": "Fowler Cole",
+      "caseNumber": 6103,
+      "roomNumber": 17
+    },
+    {
+      "eventId": "BELLEVUE93979",
+      "eventName": "JURY6208",
+      "index": 9,
+      "eventDate": "1/25/2018",
+      "eventDuration": "1hr",
+      "judgeName": "Petra Willis",
+      "defendantName": "Coleen Webster",
+      "caseNumber": 7203,
+      "roomNumber": 2
+    }
+  ]

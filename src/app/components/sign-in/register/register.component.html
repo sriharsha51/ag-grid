@@ -1,0 +1,92 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">Registration form</h4>
+  </div>
+  <div class="modal-body">
+    <form class="form-horizontal" [formGroup]="registerForm" novalidate>
+      <div class="form-group" [ngClass]="{'has-error': registerForm.get('firstName').dirty && !registerForm.get('firstName').valid }">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="firstName">First Name:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="firstName" formControlName="firstName" placeholder="First Name">
+        </div>
+      </div>
+      <div class="center" *ngIf="registerForm.controls['firstName'].errors?.required  && registerForm.controls['firstName'].dirty"><!--Validation Messages-->
+        <em>Please enter first name.</em>
+      </div>
+      <div class="center" *ngIf="registerForm.controls['firstName'].errors?.minlength || registerForm.controls['firstName'].errors?.maxlength">
+        <em>First name can be at least 3 characters and not more than 20 characters.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': registerForm.get('lastName').dirty && !registerForm.get('lastName').valid }">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="lastName">Last Name:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="lastName" formControlName="lastName" placeholder="Last Name">
+        </div>
+      </div>
+      <div class="center" *ngIf="registerForm.controls['lastName'].errors?.required  && registerForm.controls['lastName'].dirty"><!--Validation Messages-->
+        <em>Please enter last name.</em>
+      </div>
+      <div class="center" *ngIf="registerForm.controls['lastName'].errors?.minlength || registerForm.controls['lastName'].errors?.maxlength">
+        <em>Last name can be at least 3 characters and not more than 20 characters.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': registerForm.get('empId').dirty && !registerForm.get('empId').valid }">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="empId">Employee ID:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" name="empId" formControlName="empId" placeholder="Employee ID">
+        </div>
+      </div>
+      <div class="center" *ngIf="registerForm.controls['empId'].errors?.required  && registerForm.controls['empId'].dirty"><!--Validation Messages-->
+        <em>Please enter your employee ID.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': registerForm.get('email').dirty && !registerForm.get('email').valid }">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="email">Email:</label>
+        <div class="col-sm-6">
+          <input type="email" class="form-control" name="email" formControlName="email" placeholder="Email">
+        </div>
+      </div>
+      <div class="center" *ngIf="registerForm.controls['email'].errors?.required && registerForm.controls['email'].dirty"><!--Validation Messages-->
+        <em>Please enter email.</em>
+      </div>
+      <div class="center" *ngIf="registerForm.controls['email'].errors?.validateEmail && registerForm.controls['email'].dirty">
+        <em>Please enter valid email.</em>
+      </div>
+      <div>
+        <div class="form-group" [ngClass]="{'has-error': registerForm.controls['password'].dirty && !registerForm.controls['password'].valid }">
+          <label class="control-label col-sm-offset-1 col-sm-3" for="password">Password:</label>
+          <div class="col-sm-6">
+            <input type="password" class="form-control" formControlName="password" placeholder="Password">
+          </div>
+        </div>
+        <div class="center" *ngIf="registerForm.controls['password'].errors?.required && registerForm.controls['password'].dirty"><!--Validation Messages-->
+          <em>Please enter password.</em>
+        </div>
+        <div class="center" *ngIf="registerForm.controls['password'].errors?.minlength || registerForm.controls['password'].errors?.maxlength">
+          <em>Password must be at least 8 characters and not more than 20 characters.</em>
+        </div>
+        <div class="center" *ngIf="registerForm.controls['password'].errors?.validatePassword  && registerForm.controls['password'].dirty">
+          <em>Password must contain at least one letter, one number and one special character.</em>
+        </div>
+        <div class="form-group" [ngClass]="{'has-error': registerForm.controls['confirmPassword'].dirty && (!registerForm.controls['confirmPassword'].valid || registerForm.errors?.matchingPasswords)}">
+          <label class="control-label col-sm-offset-1 col-sm-3" for="confirmPassword">Confirm Password:</label>
+          <div class="col-sm-6">
+            <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Confirm password">
+          </div>
+        </div>
+        <div class="center" *ngIf="registerForm.controls['confirmPassword'].errors?.required  && registerForm.controls['confirmPassword'].dirty"><!--Validation Messages-->
+          <em>Please enter password.</em>
+        </div>
+        <div class="center" *ngIf="registerForm.errors?.matchingPasswords && registerForm.controls['confirmPassword'].dirty">
+          <em>The confirmation password does not match the password.</em>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-6">
+          <button type="submit" class="btn btn-success" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>

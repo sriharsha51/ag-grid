@@ -1,0 +1,58 @@
+<!--<div class="container-fluid">
+  <form class="jumbotron col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-sm-offset-1 col-sm-10">
+    <h2>Search Jurors by First Name</h2>
+    <div class="form-group">
+      <br>
+      <input type="search" name="search" id="search-input" [(ngModel)]="jurorFilter" class="form-control" placeholder="Search by Juror First Name">
+    </div>
+  </form>
+  <div class="col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10 col-sm-offset-1 col-sm-10">
+    <div *ngIf="showFilteredBy" class="filteredBy">
+      <h4>Filtered By: {{ jurorFilter }}</h4>
+    </div>
+     <div id="tableWrapper">
+<table class="table table-responsive table-hover table-striped table-bordered table-responsive">
+        <thead>
+          <tr>
+            <th>Juror ID</th>
+            <th>First Name</th>
+            <th>Middle Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let juror of filteredJurors">
+            We are looping through filteredJurors because while searching, we are filtering the jurors array and storing in the filteredJurors array
+            <td>{{juror.jurorId}}</td>
+            <td>{{juror.firstName}}</td>
+            <td>{{juror.middleName}}</td>
+            <td>{{juror.lastName}}</td>
+            <td>{{juror.address}}</td>
+            <td>{{juror.email}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+  </div>
+  <div *ngIf='errorMessage' class='alert alert-danger'>
+    To display the error meassage, if there is any error while retrieving data
+    Error: {{ errorMessage }}
+  </div>
+</div> -->
+<div class="rule"></div>
+<div class="container juror-table">
+  <ag-grid-angular #agGrid style="width: 1100px; height: 550px;"
+   id="myGrid" 
+   class="ag-theme-material" 
+   [rowData]="rowData" 
+   [columnDefs]="columnDefs" 
+   [gridOptions]="gridOptions"
+   (gridReady)="onGridReady($event)" 
+   [stopEditingWhenGridLosesFocus]="true"
+   enableColResize 
+   enableSorting 
+   enableFilter>
+  </ag-grid-angular>
+</div>

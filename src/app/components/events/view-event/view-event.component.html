@@ -1,0 +1,45 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">Event Details</h4>
+  </div>
+  <div class="modal-body">
+    <table class="table table-responsive">
+      <tr>
+        <th>Event Name</th>
+        <td>{{eventDetails?.eventName}}</td>
+      </tr>
+      <tr>
+        <th>Event ID</th>
+        <td>{{eventDetails?.eventId}}</td>
+      </tr>
+      <tr>
+        <th>Event Date</th>
+        <td>{{eventDetails?.eventDate}}</td>
+      </tr>
+      <tr>
+        <th>Event Duration</th>
+        <td>{{eventDetails?.eventDuration}}</td>
+      </tr>
+      <tr>
+        <th>Judge Name</th>
+        <td>{{eventDetails?.judgeName}}</td>
+      </tr>
+      <tr>
+        <th>Defendant Name</th>
+        <td>{{eventDetails?.defendantName}}</td>
+      </tr>
+      <tr>
+        <th>Case Number</th>
+        <td>{{eventDetails?.caseNumber}}</td>
+      </tr>
+      <tr>
+        <th>Room Number</th>
+        <td>{{eventDetails?.roomNumber}}</td>
+      </tr>
+    </table>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>

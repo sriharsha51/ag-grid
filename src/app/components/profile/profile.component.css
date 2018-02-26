@@ -1,0 +1,12 @@
+.box {
+    margin: 20px;
+}
+
+.col-md-offset-2, .col-md-8, .col-lg-offset-2, .col-lg-8, .col-sm-offset-1, .col-sm-10 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+th, td {
+    margin: 20px;
+}

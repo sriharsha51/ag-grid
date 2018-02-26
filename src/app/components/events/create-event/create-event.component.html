@@ -1,0 +1,114 @@
+<div class="modal-content">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title">Create New Event</h4>
+  </div>
+  <div class="modal-body">
+    <form class="form-horizontal" [formGroup]="createEventForm" novalidate>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['eventName'].dirty && !createEventForm.controls['eventName'].valid}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="eventName">Event Name:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" formControlName="eventName" placeholder="Please enter Event Name">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['eventName'].errors?.required  && createEventForm.controls['eventName'].dirty"><!--Validation Messages-->
+        <em>Please enter event name.</em>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['eventName'].errors?.minlength || createEventForm.controls['eventName'].errors?.maxlength">
+        <em>Event name can be at least 4 characters and not more than 20 characters.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['eventId'].dirty && !createEventForm.controls['eventId'].valid}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="eventId">Event ID:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" formControlName="eventId" placeholder="Please enter event ID">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['eventId'].errors?.required && createEventForm.controls['eventId'].dirty"><!--Validation Messages-->
+        <em>Please enter event ID.</em>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['eventId'].errors?.minlength || createEventForm.controls['eventId'].errors?.maxlength">
+        <em>Event ID can be at least 4 characters and not more than 20 characters.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['date'].dirty && (!createEventForm.controls['date'].valid || isError)}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="date">Event Date:</label>
+        <div class="col-sm-6">
+          <input type="date" class="form-control" formControlName="date">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['date'].errors?.required && createEventForm.controls['date'].dirty"><!--Validation Messages-->
+        <em>Please select date.</em>
+      </div>
+      <div class="center" *ngIf="isError && createEventForm.controls['date'].dirty">
+        <em>You can not select current or past date.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['duration'].dirty && !createEventForm.controls['duration'].valid}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="duration">Event Duration:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" formControlName="duration" placeholder="Please enter duration. Ex:1hr">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['duration'].errors?.required && createEventForm.controls['duration'].dirty"><!--Validation Messages-->
+        <em>Please enter event duration.</em>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['duration'].errors?.minlength || createEventForm.controls['duration'].errors?.maxlength">
+        <em>Event duration must be at least 1 character and not more than 10 characters. Example: 1 hr or 2 hr</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['judgeName'].dirty && !createEventForm.controls['judgeName'].valid}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="judgeName">Judge Name:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" formControlName="judgeName" placeholder="Please enter Judge Name">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['judgeName'].errors?.required  && createEventForm.controls['judgeName'].dirty"><!--Validation Messages-->
+        <em>Please enter Judge name.</em>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['judgeName'].errors?.minlength || createEventForm.controls['judgeName'].errors?.maxlength">
+        <em>Judge name can be at least 3 characters and not more than 50 characters.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['defendantName'].dirty && !createEventForm.controls['defendantName'].valid}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="defendantName">Defendant Name:</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" formControlName="defendantName" placeholder="Please enter defendant name">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['defendantName'].errors?.required  && createEventForm.controls['defendantName'].dirty"><!--Validation Messages-->
+        <em>Please enter Defendant name.</em>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['defendantName'].errors?.minlength || createEventForm.controls['defendantName'].errors?.maxlength">
+        <em>Defendant name can be at least 3 characters and not more than 50 characters.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['caseNumber'].dirty && !createEventForm.controls['caseNumber'].valid}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="caseNumber">Case Number:</label>
+        <div class="col-sm-6">
+          <input type="number" class="form-control" formControlName="caseNumber" placeholder="Please enter case number">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['caseNumber'].errors?.required  && createEventForm.controls['caseNumber'].dirty"><!--Validation Messages-->
+        <em>Please enter case number.</em>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['caseNumber'].errors?.min || createEventForm.controls['caseNumber'].errors?.max">
+        <em>Case number must be between 1 and 9999.</em>
+      </div>
+      <div class="form-group" [ngClass]="{'has-error': createEventForm.controls['roomNumber'].dirty && !createEventForm.controls['roomNumber'].valid}">
+        <label class="control-label col-sm-offset-1 col-sm-3" for="roomNumber">Room Number:</label>
+        <div class="col-sm-6">
+          <input type="number" class="form-control" formControlName="roomNumber" placeholder="Please enter room number">
+        </div>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['roomNumber'].errors?.required  && createEventForm.controls['roomNumber'].dirty"><!--Validation Messages-->
+        <em>Please enter room number.</em>
+      </div>
+      <div class="center" *ngIf="createEventForm.controls['roomNumber'].errors?.min || createEventForm.controls['roomNumber'].errors?.max">
+        <em>Room number must be between 1 and 50.</em>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-4 col-sm-6">
+          <button type="submit" class="btn btn-warning" [disabled]="!createEventForm.valid || isError" data-dismiss="modal">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  </div>
+</div>

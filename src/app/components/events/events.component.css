@@ -1,0 +1,53 @@
+.page-header {
+    font-size: 35px;
+}
+
+th, td{
+    text-align: center;
+}
+
+.event-btn {
+    padding: 2px;
+}
+.jumbotron {
+    margin-top: 20px;
+}
+
+.filteredBy {
+    margin:30px 0 30px 0;
+    color: #449D44;
+}
+
+#search-input { /* search icon in the search input*/
+    background-image: url('../../../assets/images/search.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#tableWrapper {
+    font-size: 14px;
+    overflow-x: auto;
+    min-width: 100%;
+    table-layout: fixed;
+}
+
+.type-ahead {
+    position: absolute;
+    left: 180px;
+    top: 218px;
+    width: 70%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 10;
+    color:#2B3E50;
+    background-color: #F6F6F6;
+    opacity: 0.7;
+}
+
+.event {
+    padding: 5px;
+}
+
+.event:hover {
+    background: #8d828238;
+}
